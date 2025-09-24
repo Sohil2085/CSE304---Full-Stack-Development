@@ -1,0 +1,5 @@
+[2025-08-25 12:30:11] ERROR: Database connection failed at host=localhost port=5432
+[2025-08-25 12:31:05] WARN: Retry attempt 1 failed
+[2025-08-25 12:31:10] INFO: Reconnecting to database...
+[2025-08-25 12:31:12] SUCCESS: Database connection restored
+[2025-08-25 12:32:00] ERROR: User login failed for username 'admin'

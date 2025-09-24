@@ -1,0 +1,108 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #fdfbfb,
+    #ebedee
+  ); /* pastel gray gradient */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container Card */
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #444;
+  font-size: 1.5rem;
+}
+
+/* Labels + Inputs */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #a3c4f3; /* pastel blue */
+  outline: none;
+  background: #f0f6ff;
+  box-shadow: 0 0 5px rgba(163, 196, 243, 0.5);
+}
+
+/* Button */
+button {
+  margin-top: 25px;
+  padding: 12px;
+  width: 100%;
+  background: #a3c4f3; /* pastel blue */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #9dbadf;
+  transform: translateY(-2px);
+}
+
+/* Error Box */
+.error {
+  color: #9c2f2f;
+  background: #ffe3e3; /* pastel red/pink */
+  border: 1px solid #ffc9c9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
