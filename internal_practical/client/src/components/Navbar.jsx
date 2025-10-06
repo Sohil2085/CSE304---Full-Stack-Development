@@ -1,19 +1,19 @@
 import React from "react";
 
 // Brand
-const NavBrand = ({ linkTo, text }) => (
+const NavBrand = ({ linkTo = "#", text = "" }) => (
   <a className="navbar-brand" href={linkTo}>{text}</a>
 );
 
 // Single link
-const NavLink = ({ linkTo, text, active }) => (
+const NavLink = ({ linkTo = "#", text = "", active = false }) => (
   <li className={active ? "active" : ""}>
     <a href={linkTo}>{text}</a>
   </li>
 );
 
 // Dropdown menu
-const NavLinkDropdown = ({ text, links }) => {
+const NavLinkDropdown = ({ text = "", links = [] }) => {
   const active = links.some(link => link.active);
   return (
     <li className={`dropdown ${active ? "active" : ""}`}>
@@ -37,7 +37,7 @@ const NavLinkDropdown = ({ text, links }) => {
 };
 
 // Menu
-const NavMenu = ({ links }) => (
+const NavMenu = ({ links = [] }) => (
   <ul className="nav navbar-nav">
     {links.map((link, i) =>
       link.dropdown ? (
@@ -50,7 +50,7 @@ const NavMenu = ({ links }) => (
 );
 
 // Main Navbar
-const Navbar = ({ brand, links }) => {
+const Navbar = ({ brand = {}, links = [] }) => {
   return (
     <nav className="navbar navbar-inverse">
       <div className="container-fluid">
@@ -78,3 +78,4 @@ const Navbar = ({ brand, links }) => {
 };
 
 export default Navbar;
+  

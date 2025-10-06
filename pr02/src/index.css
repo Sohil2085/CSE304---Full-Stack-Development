@@ -1,0 +1,16 @@
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
