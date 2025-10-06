@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme {
+  --color-slate-900: #0b1220;
+  --color-slate-800: #0f172a;
+}
+
+html, body, #root {
+  height: 100%;
+}

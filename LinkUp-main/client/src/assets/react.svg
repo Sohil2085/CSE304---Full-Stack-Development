@@ -1,0 +1,15 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="networkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2196F3" /> <stop offset="100%" stop-color="#4CAF50" /> </linearGradient>
+    <linearGradient id="playBtnGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC107" /> <stop offset="100%" stop-color="#FF9800" /> </linearGradient>
+  </defs>
+
+  <circle cx="50" cy="50" r="3" fill="url(#networkGradient)" />
+  <circle cx="150" cy="50" r="3" fill="url(#networkGradient)" />
+  <line x1="50" y1="50" x2="150" y2="50" stroke="url(#networkGradient)" stroke-width="1" />
+  <rect x="75" y="60" width="50" height="30" rx="5" fill="url(#playBtnGradient)" />
+  <path d="M95 75L115 85L95 95Z" fill="white" /> <text x="50%" y="130" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">
+    <tspan fill="#1A237E">Link</tspan> <tspan fill="#4CAF50">Up</tspan>    </text>
+</svg>
